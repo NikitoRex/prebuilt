@@ -1,6 +1,6 @@
 version: ~> 1.0
 os: linux
-dist: focal
+dist: bionic
 language: android
 
 cache:
@@ -18,7 +18,7 @@ addons:
       - curl
       - software-properties-common
     update:
-      - false
+      - true
 
 services:
   - docker
