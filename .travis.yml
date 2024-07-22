@@ -15,13 +15,7 @@ env:
 git:
   depth: 1
 
-addons:
-  apt:
-    packages:
-      - apt-transport-https
-      - ca-certificates
-      - curl
-      - software-properties-common
+
     update:
       - true
 
