@@ -8,6 +8,15 @@ android:
     - tools
     - platform-tools
     - android-13
+addons:
+  apt:
+    packages:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - software-properties-common
+    update:
+      - true
 env:
   TWRP_DEVICE: X70
   TWRP_VERSION: 5.1
