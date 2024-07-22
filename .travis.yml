@@ -18,7 +18,7 @@ addons:
       - curl
       - software-properties-common
     update:
-      - true
+      - false
 
 services:
   - docker
