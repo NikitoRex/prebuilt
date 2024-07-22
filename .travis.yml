@@ -1,7 +1,7 @@
 version: ~> 1.0
 os: linux
 dist: focal
-language: general
+language: android
 
 android:
   components:
@@ -12,7 +12,6 @@ env:
   TWRP_DEVICE: X70
   TWRP_VERSION: 5.1
 
-group: previous
 git:
   depth: 1
 
