@@ -3,6 +3,9 @@ os: linux
 dist: trusty
 language: android
 
+node_js:
+  - "14"
+
 cache:
   directories:
     - /data/data/com.termux/files/home/.rvm/
@@ -10,10 +13,6 @@ cache:
 git:
   depth: 1
 
-
- global:
-  - ANDROID_HOME=$HOME/travis-tools/android
-  - ANDROID_SDK_ROOT=$HOME/travis-tools/android
 
 
 addons:
@@ -46,7 +45,6 @@ before_script:
   - tar -xJf $HOME/twrp.tar.xz --directory $HOME/twrp/ && rm $HOME/twrp.tar.xz
 
 script:
-  - echo "Starting build..."
   - cd $HOME/twrp/
   - cd $HOME/twrp/ && git clone https://github.com/NikitoRex/prebuilt.git device/Cubot/X70
   - rm -rf bootable/recovery && git clone https://github.com/NikitoRex/android_bootable_recovery -b android-9.0 --depth 1 bootable/recovery
