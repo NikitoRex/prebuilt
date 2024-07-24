@@ -2,13 +2,15 @@ version: ~> 1.0
 os: linux
 dist: trusty
 language: android
-jdk: openjdk17
 node_js:
   - "14"
 android:
   components:
 - build-tools-29.0.3
-
+licenses:
+    - 'android-sdk-preview-license-52d11cd2'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
 cache:
   directories:
     - /data/data/com.termux/files/home/.rvm/
