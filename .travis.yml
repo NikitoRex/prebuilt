@@ -2,8 +2,6 @@ version: ~> 1.0
 os: linux
 dist: trusty
 language: android
-node_js:
-  - "14"
 android:
   components:
 - build-tools-29.0.3
