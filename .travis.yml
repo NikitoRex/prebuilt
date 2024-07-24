@@ -13,10 +13,7 @@ cache:
 git:
   depth: 1
 
-env:
- global:
-  - ANDROID_HOME=$HOME/travis-tools/android
-  - ANDROID_SDK_ROOT=$HOME/travis-tools/android
+
 
 addons:
   apt:
