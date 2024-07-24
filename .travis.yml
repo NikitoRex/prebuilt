@@ -5,10 +5,7 @@ language: android
 android:
   components:
 - build-tools-29.0.3
-licenses:
-    - 'android-sdk-preview-license-52d11cd2'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
+
 cache:
   directories:
     - /data/data/com.termux/files/home/.rvm/
@@ -16,6 +13,10 @@ cache:
 git:
   depth: 1
 
+
+ global:
+  - ANDROID_HOME=$HOME/travis-tools/android
+  - ANDROID_SDK_ROOT=$HOME/travis-tools/android
 
 
 addons:
