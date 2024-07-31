@@ -6,9 +6,8 @@ android:
  components:
     - build-tools-31.0.0
     - platform-tools
-    - platforms;android-31
     - system-images;android-31;default
-    - android-31
+    - android-13
     - extras;android;m2repository
     - extras;google;m2repository
     - extras;google;google_play_services
