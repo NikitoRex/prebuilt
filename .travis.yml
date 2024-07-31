@@ -85,7 +85,7 @@ deploy:
   provider: releases
   api_key: GITHUB_OAUTH_TOKEN
   file_glob: true
-  file: /storage/emulated/0/Download/twrp-12.1
+  file: /storage/emulated/0/Download/twrp-12.1/recovery.img
   on:
     tags: true
     repo: NikitoRex/prebuilt
