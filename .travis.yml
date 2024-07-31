@@ -86,11 +86,11 @@ after_success:
 deploy:
   cleanup: true
   provider: releases
-  api_key: $GITHUB_OAUTH_TOKEN
+  api_key: GITHUB_OAUTH_TOKEN
   file_glob: true
-  file: $HOME/twrp/*.img
+  file: /storage/emulated/0/Download/twrp-12.1
   on:
-    tags: false
+    tags: true
     repo: NikitoRex/prebuilt
     branch: main
 
